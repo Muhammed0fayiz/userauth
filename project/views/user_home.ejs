@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(194, 218, 207);
+        }
+
+        .container {
+            max-width: 600px; /* Adjust the maximum width as needed */
+        }
+
+        .main {
+            font-size: 5rem; /* Adjust the font size as needed */
+            background-color: rgb(0, 255, 85);
+           
+        }
+        .welcome{
+            margin-left: 3rem;
+        }
+
+        .styled-text {
+            color: #28a745; /* Bootstrap's success color */
+            font-weight: bold; /* Make the text bold */
+            font-size: 1.5rem; /* Adjust the font size as needed */
+            margin-left: 10rem;
+        }
+
+        .logout-btn {
+            margin-top: 8rem; /* Add top margin to the button */
+            margin-left:35rem;
+        }
+    </style>
+    <title>Bootstrap Styled Page</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="main alert alert-success">
+       <p class="welcome"> WELCOME </p>
+            <p class="styled-text">
+                <%= details %>
+            </p>
+    </div>
+    
+    
+</div>
+<a href="/userlogout"><button class="btn btn-danger logout-btn">Logout</button></a>
+
+</div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+

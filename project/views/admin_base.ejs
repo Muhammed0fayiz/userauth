@@ -1,0 +1,45 @@
+<!-- header -->
+<%- include('header') %>
+
+    <body class="bg-primary">
+        <!-- main container -->
+        <div class="admin_main container d-flex align-items-start justify-content-center w-50  mt-5 ">
+            <!-- login container -->
+
+            <div class="login_text container-fluid text-center">
+                <h1 class="bg-info">Log In to Admin Panel</h1>
+
+
+
+                <div class="form_controller">
+
+                    <div class="signup">
+                        <% if(typeof message !=='undefined' ) { %>
+                            <div class="alert alert-danger text-center">
+                                <%= message %>
+                            </div>
+                            <% } %>
+
+
+                                <form action="/Login" method="POST">
+                                    <div class="mb-3">
+
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Enter your password" name="password">
+                                    </div>
+                                    <a href="/"><i class="fa-solid fa-backward" style="color: #4278d7;"></i></a>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary w-50">Admin Sign_in</button>
+
+                                </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <%- include('footer') %>

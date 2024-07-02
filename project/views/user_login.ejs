@@ -1,0 +1,45 @@
+ 
+ <%- include('header') %>
+ <!-- main container -->
+ <div class="user_container container d-flex align-items-start justify-content-center w-50  mt-5 ">
+    <!-- login container -->
+
+    <div class=" container-fluid text-center">
+        <% if (typeof message !== 'undefined') { %>
+            <div class="alert alert-danger text-center">
+              
+            </div>
+        <% } %>
+        
+        <div class="form_controller">
+            <form action="/signup_user" method="post">
+            <div class="mb-3">
+
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your name"name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your place"type="batch"name="place" required>
+            </div>
+            <div class="mb-3">
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter your email"name="email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter your password"name="password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-50">User Sign_in</button>
+            <br>
+           <a href="/">back</a>
+            </form>
+           
+        </div>
+
+    </div>
+</div>
+
+
+<%- include('footer') %>

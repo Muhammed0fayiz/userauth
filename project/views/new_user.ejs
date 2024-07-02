@@ -1,0 +1,40 @@
+ 
+ <%- include('header') %>
+ <!-- main container -->
+ <div class="user_container container d-flex align-items-start justify-content-center w-50  mt-5 ">
+    <!-- login container -->
+
+    <div class=" container-fluid text-center">
+        <h1 class="bg-info">Add new user</h1>
+        <div class="form_controller">
+            <form action="/adduser" method="post">
+            <div class="mb-3">
+
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter  name"name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter  place"type="batch"name="place"required>
+            </div>
+            <div class="mb-3">
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter  email"name="email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter password"name="password" required>
+            </div>
+
+           <button type="submit" class="btn btn-primary w-50">Add new user</button>
+            <br>
+           <a href="/dashboard">back</a>
+            </form>
+           
+        </div>
+
+    </div>
+</div>
+
+
+<%- include('footer') %>
